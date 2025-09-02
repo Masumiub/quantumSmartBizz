@@ -3,6 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Brain } from 'lucide-react';
 
 
 
@@ -46,7 +47,17 @@ export default function Footer() {
                         {/* Logo and CTA Section */}
                         <div className="space-y-6">
                             <div className="flex items-center space-x-2">
-                                <Link href='/'>Quantum Smart Bizz</Link>
+                                                    <Link href='/'>
+                        <div className="flex items-center">
+                            <div className="ml-2">
+                                <div className="bg-purple-600 p-2 rounded-lg text-white">
+                                    <Brain className="" />
+                                </div>
+
+                            </div>
+                            <p className="px-3 text-xl font-bold text-white">Quantum Smart Bizz</p>
+                        </div>
+                    </Link>
                             </div>
 
 

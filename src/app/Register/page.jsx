@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Eye, EyeOff, Mail, Lock, User, X } from "lucide-react";
-
+import ImgPic from "../../../public/assets/Design stats-amico.svg";
 import Image from "next/image";
 import Swal from "sweetalert2";
 
@@ -254,12 +254,12 @@ export default function Register() {
         {/* Right Side - Image */}
         <div className="hidden lg:block relative">
           <div className="absolute inset-0 "></div>
-          {/* <Image
-            src={Banner}
+          <Image
+            src={ImgPic}
             alt="Team collaboration"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full  rounded-2xl"
             priority
-          /> */}
+          />
         </div>
       </div>
 

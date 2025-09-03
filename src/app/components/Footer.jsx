@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Brain } from 'lucide-react';
-
+import postImg from '../../../public/assets/post.png'
 
 
 export default function Footer() {
@@ -45,7 +45,7 @@ export default function Footer() {
                 <footer className="py-10 pb-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {/* Logo and CTA Section */}
-                        <div className="space-y-6">
+                        <div className="space-y-6 pl-8">
                             <div className="flex items-center space-x-2">
                                                     <Link href='/'>
                         <div className="flex items-center">
@@ -122,7 +122,7 @@ export default function Footer() {
 
                         <div className='w-full md:w-1/2'>
                             {/* Social Media Icons */}
-                            <div className="flex space-x-4">
+                            <div className="flex space-x-4 pl-8">
                                 <Link href="https://www.linkedin.com/in/musfique-77-masum/" className="w-10 h-10 bg-gray-600 rounded-full flex items-center justify-center hover:bg-purple-600 transition-colors">
                                     <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -150,8 +150,7 @@ export default function Footer() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="flex space-x-4">
                                         <div className="w-28 h-16 rounded-lg object-cover">
-                                            {/* Placeholder for post image */}
-                                            {/* <Image src={postImg} alt='post' className='object-cover w-28 h-16 rounded-2xl'></Image> */}
+                                          <Image src={postImg} alt='post' className='object-cover w-28 h-16 rounded-2xl'></Image>
                                         </div>
                                         <div className="space-y-1">
                                             <p className="text-gray-400 text-xs">November 7, 2024</p>
@@ -163,8 +162,7 @@ export default function Footer() {
 
                                     <div className="flex space-x-4">
                                         <div className="w-28 h-16 rounded-lg object-cover">
-                                            {/* Placeholder for post image */}
-                                            {/* <Image src={postImg} alt='post' className='object-cover w-28 h-16 rounded-2xl'></Image> */}
+                                          <Image src={postImg} alt='post' className='object-cover w-28 h-16 rounded-2xl'></Image>
                                         </div>
                                         <div className="space-y-1">
                                             <p className="text-gray-400 text-xs">November 7, 2024</p>

@@ -5,6 +5,13 @@
 
 The Smart Data Insights Dashboard is a full-stack web application designed to transform raw business data into actionable intelligence. It provides automated analysis, AI-powered recommendations, and interactive visualizations to support data-driven decision-making.
 
+## Live Link:
+https://quantum-smart-bizz.vercel.app/
+
+## User credientials:
+- Email: musfiquemasum@gmail.com  
+- password: admin1234
+
 **Tech Stack:** Next.js, React, MongoDB, Recharts, React Hook Form, NextAuth.js
 
 ---

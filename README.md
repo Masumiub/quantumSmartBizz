@@ -8,6 +8,9 @@ The Smart Data Insights Dashboard is a full-stack web application designed to tr
 ## Live Link:
 https://quantum-smart-bizz.vercel.app/
 
+## Video Demo:
+https://www.youtube.com/watch?v=6BMNxc9h7jo
+
 ## User credientials:
 - Email: musfiquemasum@gmail.com  
 - password: admin1234

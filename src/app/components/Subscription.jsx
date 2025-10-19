@@ -1,6 +1,7 @@
 "use client";
 
 import { Check, Star, Zap, Crown, Rocket, Shield, Users } from 'lucide-react';
+import Link from 'next/link';
 
 const Subscription = () => {
   const plans = [
@@ -138,13 +139,13 @@ const Subscription = () => {
                   </ul>
 
                   {/* CTA Button */}
-                  <button className={`w-full py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
+                  <Link href='/Register' className={`btn w-full py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 ${
                     plan.popular 
                       ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-xl hover:shadow-blue-500/50 hover:from-blue-700 hover:to-purple-700' 
                       : 'bg-white/10 text-white border border-white/20 hover:bg-white/20 hover:border-white/40'
                   }`}>
                     {plan.popular ? 'Start Free Trial' : 'Get Started'}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

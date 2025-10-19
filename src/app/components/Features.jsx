@@ -1,6 +1,7 @@
 "use client";
 
 import { Upload, Database, BarChart, Brain, Zap, Shield, Users, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
 
 const Features = () => {
   const features = [
@@ -105,12 +106,12 @@ const Features = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/50">
+          <Link href='/Register' className="btn group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/50">
             <span className="flex items-center space-x-2">
               <Brain className="w-5 h-5 group-hover:animate-spin" />
               <span>Explore All Features</span>
             </span>
-          </button>
+          </Link>
         </div>
       </div>
 

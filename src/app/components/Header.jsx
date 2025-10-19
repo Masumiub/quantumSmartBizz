@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X, BarChart3, Zap, Brain } from 'lucide-react';
+import Link from 'next/link';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
         <div className="text-center">
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 mb-6 animate-pulse">
-            Smart Data Insights
+            AI Powered Smart Data Insights
             <br />
             <span className="text-white">Dashboard</span>
           </h1>
@@ -34,18 +35,18 @@ const Header = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-blue-500/50">
+            <Link href='/Register' className="btn group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-blue-500/50">
               <span className="flex items-center space-x-2">
                 <Zap className="w-5 h-5 group-hover:animate-pulse" />
                 <span>Start Free Trial</span>
               </span>
-            </button>
-            <button className="border-2 border-gray-400 text-gray-300 hover:text-white hover:border-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
+            </Link>
+            <a href='https://www.youtube.com/watch?v=6BMNxc9h7jo' className="btn border-2 border-gray-400 text-gray-300 hover:text-white hover:border-white px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105">
               <span className="flex items-center space-x-2">
                 <BarChart3 className="w-5 h-5" />
                 <span>View Demo</span>
               </span>
-            </button>
+            </a>
           </div>
 
           {/* Feature highlights */}
